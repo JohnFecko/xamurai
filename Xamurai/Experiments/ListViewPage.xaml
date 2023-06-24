@@ -4,26 +4,37 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:Xamurai"
              Title="List View">
-	<ContentPage.Content>
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <DataTemplate x:Key="CarTemplate">
+                <ViewCell>
+                    <local:CarView Padding="0,10,0,0" />
+                </ViewCell>
+            </DataTemplate>
+            <DataTemplate x:Key="MercedesTemplate">
+                <ViewCell>
+                    <local:MercedesView Padding="0,10,0,0" />
+                </ViewCell>
+            </DataTemplate>
+            <local:CarDataTemplateSelector x:Key="carDataTemplateSelector" CarDataTemplate="{StaticResource CarTemplate}" MercedesDataTemplate="{StaticResource MercedesTemplate}" />
+        </ResourceDictionary>
 
-		<Grid>
-			<Grid.RowDefinitions>
-				<RowDefinition Height="Auto" />
-				<RowDefinition Height="*" />
-			</Grid.RowDefinitions>
-			<ListView Grid.Row="1"
+    </ContentPage.Resources>
+    <ContentPage.Content>
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <ListView Grid.Row="1"
 			          HasUnevenRows="True"
 			          ItemsSource="{Binding Cars}"
 			          SelectionMode="None"
-			          SeparatorVisibility="None">
-				<ListView.ItemTemplate>
-					<DataTemplate>
-						<ViewCell>
-							<local:CarView Padding="0,10,0,0" />
-						</ViewCell>
-					</DataTemplate>
-				</ListView.ItemTemplate>
-			</ListView>
-		</Grid>
-	</ContentPage.Content>
+			          SeparatorVisibility="None"
+					ItemTemplate="{StaticResource carDataTemplateSelector}"
+			 >
+            </ListView>
+        </Grid>
+    </ContentPage.Content>
 </ContentPage>

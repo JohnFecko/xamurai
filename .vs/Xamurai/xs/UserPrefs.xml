@@ -1,0 +1,34 @@
+﻿<Properties StartupConfiguration="{B27A7460-CA2B-466B-BC3C-5257EE222A98}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Xamurai/SampleViewModel.cs">
+    <Files>
+      <File FileName="Xamurai/CarView.xaml" Line="1" Column="1" />
+      <File FileName="Xamurai/CarView.xaml.cs" Line="1" Column="1" />
+      <File FileName="Xamurai/App.xaml.cs" Line="1" Column="1" />
+      <File FileName="Xamurai/SampleViewModel.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Xamurai">
+            <Node name="Xamurai" expanded="True">
+              <Node name="Experiments" expanded="True">
+                <Node name="ListViewPage.xaml" expanded="True" />
+              </Node>
+              <Node name="App.xaml" expanded="True" />
+              <Node name="CarView.xaml" expanded="True" />
+              <Node name="SampleViewModel.cs" selected="True" />
+            </Node>
+            <Node name="Xamurai.iOS" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Xamurai.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.A40E5716-BAAE-4F8E-B582-D552BFB1910A" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+</Properties>

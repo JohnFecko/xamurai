@@ -5,28 +5,29 @@
              xmlns:local="clr-namespace:Xamurai"
              x:Name="_carView"
              BackgroundColor="White">
-	<ContentView.Content>
-		<Grid>
-			<Frame Margin="5,15,5,5"
+    <ContentView.Content>
+
+        <Grid  >
+            <Frame Margin="5,15,5,5"
 			       BorderColor="LightGray"
 			       CornerRadius="5"
-			       HasShadow="False">
-				<Grid>
-					<Grid.RowDefinitions>
-						<RowDefinition Height="Auto" />
-					</Grid.RowDefinitions>
-					<Grid IsVisible="{Binding IsExpanded, Source={x:Reference _carView}}">
-						<Grid.RowDefinitions>
-							<RowDefinition Height="Auto" />
-							<RowDefinition Height="*" />
-						</Grid.RowDefinitions>
-						<Label HorizontalOptions="End"
+			       HasShadow="False" Style="{DynamicResource FrameStyle}">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <Grid IsVisible="{Binding IsExpanded, Source={x:Reference _carView}}">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+                        <Label HorizontalOptions="End"
 						       Text="{Binding Notes}"
 						       TextColor="Gray" />
-						<Label Grid.Row="1" Text="{Binding Description}" />
-					</Grid>
-				</Grid>
-			</Frame>
+                        <Label Grid.Row="1" Text="{Binding Description}" Style="{DynamicResource DescriptionStyle}" />
+                    </Grid>
+                </Grid>
+            </Frame>
 			<StackLayout Margin="20,0,0,0"
 			             BackgroundColor="White"
 			             HorizontalOptions="Start"
@@ -45,6 +46,6 @@
 			</StackLayout>
 
 
-		</Grid>
-	</ContentView.Content>
+        </Grid>
+    </ContentView.Content>
 </ContentView>
