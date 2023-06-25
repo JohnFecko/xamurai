@@ -12,7 +12,8 @@ namespace Xamurai
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class ListViewPage : ContentPage
 	{
-		public ListViewPage ()
+
+        public ListViewPage ()
 		{
 			BindingContext = new SampleViewModel();
 			InitializeComponent ();

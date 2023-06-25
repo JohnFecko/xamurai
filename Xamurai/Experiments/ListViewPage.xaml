@@ -27,14 +27,14 @@
                 <RowDefinition Height="Auto" />
                 <RowDefinition Height="*" />
             </Grid.RowDefinitions>
-            <ListView Grid.Row="1"
+            <local:CustomListView Grid.Row="1"
 			          HasUnevenRows="True"
 			          ItemsSource="{Binding Cars}"
 			          SelectionMode="None"
 			          SeparatorVisibility="None"
 					ItemTemplate="{StaticResource carDataTemplateSelector}"
 			 >
-            </ListView>
+            </local:CustomListView>
         </Grid>
     </ContentPage.Content>
 </ContentPage>
