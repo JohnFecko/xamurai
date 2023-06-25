@@ -17,6 +17,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include="OpenSans-Regular.ttf" />
+  </ItemGroup>
+  <ItemGroup>
     <EmbeddedResource Update="CarCircleView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
@@ -40,6 +43,9 @@
     </EmbeddedResource>
   </ItemGroup>
 
+  <ItemGroup>
+    <None Remove="OpenSans-Regular.ttf" />
+  </ItemGroup>
   <ItemGroup>
     <None Update="CarView.xaml">
       <Generator>MSBuild:Compile</Generator>

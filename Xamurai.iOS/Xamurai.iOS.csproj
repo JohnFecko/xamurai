@@ -168,7 +168,4 @@
       <Name>XF4Layouts</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Resources\OpenSans-Regular.ttf" />
-  </ItemGroup>
 </Project>

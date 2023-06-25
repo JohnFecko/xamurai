@@ -1,6 +1,7 @@
 ﻿using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
+[assembly: ExportFont("OpenSans-Regular.ttf", Alias = "OpenSans")]
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace Xamurai
 {
