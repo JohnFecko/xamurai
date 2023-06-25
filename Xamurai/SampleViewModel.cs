@@ -2,19 +2,22 @@
 using System;
 using System.Collections.ObjectModel;
 using System.Linq;
+using System.Windows.Input;
 using Xamarin.Forms;
 
 namespace Xamurai
 {
 	public class SampleViewModel : BindableBase
 	{
-		public SampleViewModel()
+  
+
+        public SampleViewModel()
 		{
 			GridSpan = Device.Idiom == TargetIdiom.Phone ? 1 : 2;
 			BuildCars();
-		}
+        }
 
-		private int _gridSpan;
+        private int _gridSpan;
 
 		public int GridSpan
 		{

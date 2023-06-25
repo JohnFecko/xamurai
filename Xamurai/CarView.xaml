@@ -5,16 +5,18 @@
              xmlns:local="clr-namespace:Xamurai"
              x:Name="_carView"
              BackgroundColor="White"
-
+             xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
              >
     <ContentView.Content>
 
-        <Grid>
+        <Grid VerticalOptions="Center">
             <Frame Margin="5,15,5,5"
 			       BorderColor="LightGray"
 			       CornerRadius="5"
 			       HasShadow="False" Style="{DynamicResource FrameStyle}"
                    IsVisible="{Binding IsExpanded, Source={x:Reference _carView}}"
+                   xct:TouchEffect.LongPressCommand="{Binding Command, Source={x:Reference _carView}}"
+                   xct:TouchEffect.LongPressCommandParameter="{Binding .}"
                    >
                 <Grid>
                     <Grid.RowDefinitions>

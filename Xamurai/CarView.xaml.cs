@@ -9,7 +9,14 @@ namespace Xamurai
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class CarView : ContentView, INotifyPropertyChanged
 	{
-		public CarView ()
+        public static BindableProperty CommandProperty = BindableProperty.Create(nameof(Command), typeof(ICommand), typeof(CarCircleView), null);
+
+        public ICommand Command
+        {
+            get { return (ICommand)this.GetValue(CommandProperty); }
+            set { this.SetValue(CommandProperty, value); }
+        }
+        public CarView ()
 		{
 			IsExpanded = true;
 			ToggleCollapseCommand = new DelegateCommand(ToggleCollapse);
@@ -23,10 +30,6 @@ namespace Xamurai
 				//BUG iOS pre7+: doesn't collapse the section, only makes the label invisible
 				IsExpanded = !IsExpanded;
 				OnPropertyChanged(nameof(IsExpanded));
-			
-			ViewCell viewCell = Parent as ViewCell;
-            CustomListView view = viewCell.Parent as CustomListView;
-			view.UpdateCells();
             //}
         }
 
@@ -34,5 +37,6 @@ namespace Xamurai
 
 		public bool IsExpanded { get; set; }
 
-	}
+
+    }
 }

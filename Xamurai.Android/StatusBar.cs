@@ -12,8 +12,6 @@ namespace Xamurai.Droid
     {
         WindowManagerFlags _originalFlags;
 
-        #region IStatusBar implementation
-
         public void HideStatusBar()
         {
             var activity = (Activity)Forms.Context;

@@ -1,4 +1,8 @@
 ﻿<Properties StartupConfiguration="{B27A7460-CA2B-466B-BC3C-5257EE222A98}|Default">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Xamurai.Android PreferredExecutionTarget="Android.pixel_5_-_api_30" />
+  <MonoDevelop.Ide.ItemProperties.Xamurai.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.A40E5716-BAAE-4F8E-B582-D552BFB1910A" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workbench ActiveDocument="Xamurai/SampleViewModel.cs">
     <Files>
       <File FileName="Xamurai/CarView.xaml" Line="1" Column="1" />
@@ -24,11 +28,6 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.Xamurai.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.A40E5716-BAAE-4F8E-B582-D552BFB1910A" />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints />
 </Properties>
