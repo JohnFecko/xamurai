@@ -18,5 +18,10 @@ namespace Xamurai
 			BindingContext = new SampleViewModel();
 			InitializeComponent ();
 		}
-	}
+
+        void ContentPage_Disappearing(System.Object sender, System.EventArgs e)
+        {
+            DependencyService.Get<IStatusBar>().ShowStatusBar();
+        }
+    }
 }

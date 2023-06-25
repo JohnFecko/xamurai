@@ -30,7 +30,8 @@ namespace Xamurai
 
 		private void OpenListView()
 		{
-			Navigation.PushAsync(new ListViewPage());
+            DependencyService.Get<IStatusBar>().HideStatusBar();
+            Navigation.PushAsync(new ListViewPage());
 		}
 
 		private void OpenCollectionView()
