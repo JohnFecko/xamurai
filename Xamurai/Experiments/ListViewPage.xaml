@@ -10,6 +10,11 @@
         <ResourceDictionary>
             <DataTemplate x:Key="CarTemplate">
                 <ViewCell>
+                    <ViewCell.ContextActions>
+                        <MenuItem Clicked="DeleteItem_Clicked"
+                      CommandParameter="{Binding .}"
+                      Text="Delete" IsDestructive="True" />
+                    </ViewCell.ContextActions>
                     <local:CarView Padding="0,10,0,0" />
                 </ViewCell>
             </DataTemplate>
