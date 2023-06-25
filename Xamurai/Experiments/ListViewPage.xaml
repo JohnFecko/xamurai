@@ -20,6 +20,11 @@
             </DataTemplate>
             <DataTemplate x:Key="MercedesTemplate">
                 <ViewCell>
+                    <ViewCell.ContextActions>
+                        <MenuItem Clicked="DeleteItem_Clicked"
+                      CommandParameter="{Binding .}"
+                      Text="Delete" IsDestructive="True" />
+                    </ViewCell.ContextActions>
                     <local:MercedesView Padding="0,10,0,0" />
                 </ViewCell>
             </DataTemplate>
